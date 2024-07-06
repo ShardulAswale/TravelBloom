@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+                <span>TravelBloom</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search...">
+                <button onclick="filterCards()">Search</button>
+                <button onclick="resetFilter()">Reset</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="left-column">
+            <div class="media">
+                <div class="line-div"></div>
+                <div class="social-icons">
+
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="welcome-text">
+                <h1>Welcome to Travel Recommendations</h1>
+                <p>Discover the best places to visit around the world.</p>
+            </div>
+        </section>
+        <section class="right-column">
+            <div id="card-list" class="cards-container"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
