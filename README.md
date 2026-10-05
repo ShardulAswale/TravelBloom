@@ -8,17 +8,9 @@ The home page fetches `travel_recommendation_api.json` and creates cards for cit
 
 ## Usage
 
-Preview `index.html` using a static web server, such as VS Code Live Server. This lets the browser load the local JSON file through `fetch()`; opening the HTML through a `file://` URL may block that request.
+Preview `index.html` with VS Code Live Server, or publish the repository files directly to GitHub Pages or another static host. Serve the files over HTTP so the browser can load `travel_recommendation_api.json`.
 
-Alternatively, if Python is installed, its built-in server can serve the same static files:
-
-```sh
-python -m http.server 8000
-```
-
-For the Python command above, open `http://localhost:8000` in a browser. Python is only an optional preview tool, not an application dependency.
-
-The HTML, CSS, JavaScript, JSON and image files can also be hosted directly on GitHub Pages or another static host.
+No package installation or build step is required.
 
 ## Notes
 
